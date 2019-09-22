@@ -25,8 +25,8 @@ render(){
 
    <div className=' justify-content-center'>
      <h1 className='text-center' onClick={() => this.setState({ LiveList: 0 })}>Live Stream</h1>
-     <Button className='btn btn-sm ' style={{ marginLeft:'10px'}} onClick={() => this.setState({ LiveList: 1 })}>Live Stream List</Button>
-     <Button className='btn btn-sm float-right' style={{ marginRight:'10px'}} onClick={() => this.setState({ EditLive: 1 })}>Edit LiveStream</Button>
+     <Button className='btn btn-sm ' style={{ marginLeft:'10px'}} onClick={() => this.setState({ LiveList: 1, EditLive:0 })}>Live Stream List</Button>
+     <Button className='btn btn-sm float-right' style={{ marginRight:'10px'}} onClick={() => this.setState({ EditLive: 1, LiveList:0 })}>Edit LiveStream</Button>
    </div>
 
 <hr />
